@@ -1,0 +1,17 @@
+<Page
+    xmlns="http://www.nativescript.org/tns.xsd" loaded="onLoaded" navigatedTo="onNavigatedTo">
+    <FlexboxLayout class="page">
+        <StackLayout class="form">
+            <Image src="res://test" stretch="none" class="img-rounded p-l-15 p-r-15 p-t-15"></Image>
+            <Label class="header" text="TO Does"></Label>
+            <StackLayout class="input-field">
+                <TextField class="input" hint="Email" keyboardType="email" autocorrect="false" autocapitalizationType="none"></TextField>
+            </StackLayout>
+            <StackLayout class="input-field">
+                <TextField class="input" hint="password" ></TextField>
+            </StackLayout>
+            <Button text="Log In" class="btn btn-primary"></Button>
+        </StackLayout>
+        <Label text="Don’t have an account?"></Label>
+    </FlexboxLayout>
+</Page>
