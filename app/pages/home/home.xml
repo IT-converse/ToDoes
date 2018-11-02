@@ -1,9 +1,11 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:sd="nativescript-ui-sidedrawer" loaded="pageLoaded">
-
-    <ActionBar title="RadSideDrawer Demo" class="action-bar" />
-
-    <sd:RadSideDrawer id="sideDrawer">
-
+<Page
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    xmlns:sd="nativescript-ui-sidedrawer" loaded="pageLoaded">
+    <ActionBar title="ToDoes App" class="action-bar">
+        <ActionItem tap="toggleDrawer" ios.systemIcon="4" android.systemIcon="ic_menu_btn_add" ios.position="left" />
+    </ActionBar>
+    <sd:RadSideDrawer id="sideDrawer" >
+        <!-- <sd:RadSideDrawer id="sideDrawer"> -->
         <!-- side drawer content -->
         <sd:RadSideDrawer.drawerContent>
             <StackLayout class="sidedrawer-left">
@@ -11,22 +13,18 @@
                     <Label text="Hello RadSideDrawer!" class="sidedrawer-header-brand" />
                 </StackLayout>
                 <StackLayout class="sidedrawer-content">
-                    <Label text="Home" class="sidedrawer-list-item-text" />
-                    <Label text="Basics" class="sidedrawer-list-item-text" />
-                    <Label text="Options" class="sidedrawer-list-item-text" />
-                    <Label text="Help" class="sidedrawer-list-item-text" />
-                    <Label text="Advanced" class="sidedrawer-list-item-text" />
+                    <label text="overview" class="sidedrawer-list-item-text" tap="onOverview" />
+                    <label text="create" class="sidedrawer-list-item-text" tap="onCreate" />
+                    <Label text="TODO's" class="sidedrawer-list-item-text" />
+                    <Label text="about" class="sidedrawer-list-item-text" />
                 </StackLayout>
             </StackLayout>
         </sd:RadSideDrawer.drawerContent>
-
         <!-- The main content -->
         <sd:RadSideDrawer.mainContent>
             <StackLayout>
                 <Button text="Toggle Drawer" class="btn btn-primary" tap="toggleDrawer" />
             </StackLayout>
         </sd:RadSideDrawer.mainContent>
-
     </sd:RadSideDrawer>
-
 </Page>
