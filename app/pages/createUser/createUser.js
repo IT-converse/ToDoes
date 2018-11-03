@@ -5,8 +5,8 @@ const frameModule = require("ui/frame");
 exports.onLoaded = function(args) {
   let page = args.object;
   let project = new Observable.fromObject({
-    title: "",
-    description: ""
+    name: "",
+    email: ""
   });
   page.bindingContext = project;
 };
@@ -21,13 +21,12 @@ exports.onCreate = function(args) {
 
   httpModule
     .request({
-      url: "http://192.168.1.105:3000/projects.json",
+      url: "http://192.168.1.105:3000/users.json",
       method: "POST",
       headers: { "Content-Type": "application/json" },
       content: JSON.stringify({
-        title: project.title,
-        description: project.description,
-        user_id: 1
+        name: project.name,
+        email: project.email
       })
     })
     .then(
