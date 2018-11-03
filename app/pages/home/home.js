@@ -45,7 +45,7 @@ exports.onLoaded = function(args) {
 
   httpModule
     .request({
-      url: "http://192.168.1.105:3000/projects.json",
+      url: "http://0.0.0.0:3000/projects.json",
       method: "GET",
       headers: { "Content-Type": "application/json" }
     })

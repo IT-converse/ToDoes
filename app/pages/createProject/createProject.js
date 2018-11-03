@@ -21,7 +21,7 @@ exports.onCreate = function(args) {
 
   httpModule
     .request({
-      url: "http://192.168.1.105:3000/projects.json",
+      url: "http://0.0.0.0:3000/projects.json",
       method: "POST",
       headers: { "Content-Type": "application/json" },
       content: JSON.stringify({
