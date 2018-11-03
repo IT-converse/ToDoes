@@ -23,7 +23,7 @@ exports.toggleDrawer = function() {
 };
 
 exports.onNewTask = function() {
-  traverse("create");
+  traverse("createProject");
 };
 
 exports.onTasks = function() {
