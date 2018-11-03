@@ -10,7 +10,7 @@
             <StackLayout class="input-field">
                 <TextField class="input" hint="password" ></TextField>
             </StackLayout>
-            <Button text="Log In" class="btn btn-primary"></Button>
+            <Button text="Log In" class="btn btn-primary" tap="onLogin"></Button>
         </StackLayout>
         <Label text="Don’t have an account?"></Label>
     </FlexboxLayout>

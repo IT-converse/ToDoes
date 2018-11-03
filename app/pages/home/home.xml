@@ -3,6 +3,7 @@
     xmlns:sd="nativescript-ui-sidedrawer" loaded="pageLoaded">
     <ActionBar title="ToDoes App" class="action-bar">
         <ActionItem tap="toggleDrawer" ios.systemIcon="4" android.systemIcon="ic_menu_btn_add" ios.position="left" />
+        <NavigationButton visibility="hidden" ></NavigationButton>
     </ActionBar>
     <sd:RadSideDrawer id="sideDrawer" >
         <!-- <sd:RadSideDrawer id="sideDrawer"> -->
@@ -17,6 +18,7 @@
                     <label text="create" class="sidedrawer-list-item-text" tap="onCreate" />
                     <Label text="TODO's" class="sidedrawer-list-item-text" />
                     <Label text="about" class="sidedrawer-list-item-text" />
+                    <Label text="Log Out" class="sidedrawer-list-item-text" tap="onLogOUt"/>
                 </StackLayout>
             </StackLayout>
         </sd:RadSideDrawer.drawerContent>

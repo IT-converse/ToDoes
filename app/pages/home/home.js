@@ -4,7 +4,7 @@ const frameModule = require("ui/frame");
 var drawer;
 
 function traverse(page) {
-  console.log("traversing to" + page);
+  console.log("traversing to " + page);
   frameModule.topmost().navigate({
     moduleName: "pages/" + page + "/" + page,
     transition: "slideBottom"
@@ -26,4 +26,8 @@ exports.onCreate = function() {
 
 exports.onOverview = function() {
   traverse("overview");
+};
+
+exports.onLogOUt = function() {
+  traverse("login");
 };
