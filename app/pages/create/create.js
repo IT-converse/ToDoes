@@ -1,5 +1,6 @@
 const Observable = require("data/observable");
 const httpModule = require("http");
+const frameModule = require("ui/frame");
 
 exports.onLoaded = function(args) {
   let page = args.object;
@@ -12,6 +13,10 @@ exports.onLoaded = function(args) {
 
 exports.onCreate = function(args) {
   let project = args.object.bindingContext;
+  var drawer = frameModule.topmost().navigate({
+    moduleName: "pages/" + "home" + "/" + "home",
+    transition: "slideBottom"
+  });
   console.log(project);
 
   httpModule
