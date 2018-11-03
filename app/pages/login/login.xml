@@ -15,6 +15,6 @@
             </StackLayout>
             <Button text="Log In" class="btn btn-primary" tap="onLogin"></Button>
         </StackLayout>
-        <Label text="Don’t have an account?"></Label>
+        <Label text="Don’t have an account?" tap="onCreateUser"></Label>
     </FlexboxLayout>
 </Page>

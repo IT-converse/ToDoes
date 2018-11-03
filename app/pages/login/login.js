@@ -12,3 +12,6 @@ function traverse(page) {
   exports.onLogin = function() {
     traverse("home");
   };
+  exports.onCreateUser = function() {
+    traverse("createUser");
+  };

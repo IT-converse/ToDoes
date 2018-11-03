@@ -1,0 +1,9 @@
+<Page
+    xmlns="http://www.nativescript.org/tns.xsd" loaded="onLoaded" navigatedTo="onNavigatedTo">
+    <StackLayout>
+        <TextField hint="Username" text="{{ title }}" />
+        <TextField hint="Email" class="input"  text="{{ email }}" keyboardType="email" autocorrect="false" autocapitalizationType="none"></TextField>
+        <TextField class="input" hint="password" ></TextField>
+        <Button text="create user" tap="onCreate" class="btn btn-primary btn-active btn-rounded-lg" />
+    </StackLayout>
+</Page>
