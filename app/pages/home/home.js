@@ -22,11 +22,11 @@ exports.toggleDrawer = function() {
   drawer.toggleDrawerState();
 };
 
-exports.onCreate = function() {
+exports.onNewTask = function() {
   traverse("create");
 };
 
-exports.onOverview = function() {
+exports.onTasks = function() {
   traverse("overview");
 };
 

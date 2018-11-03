@@ -3,6 +3,6 @@
     <StackLayout>
         <TextField hint="Title ..." text="{{ title }}" />
         <TextView hint="Description ... " text="{{ description }}" editable="true" />
-        <Button text="create" tap="onCreate" class="btn btn-primary btn-active" />
+        <Button text="create" tap="onCreate" class="btn btn-primary btn-active btn-rounded-lg" />
     </StackLayout>
 </Page>
