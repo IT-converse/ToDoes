@@ -1,7 +1,7 @@
 <Page
     xmlns="http://schemas.nativescript.org/tns.xsd"
     xmlns:sd="nativescript-ui-sidedrawer" loaded="pageLoaded">
-    <ActionBar title="ToDoes App" class="action-bar">
+    <ActionBar title="Task list" class="action-bar">
         <ActionItem tap="toggleDrawer" ios.systemIcon="4" android.systemIcon="ic_menu_btn_add" ios.position="left" />
         <NavigationButton visibility="hidden" ></NavigationButton>
     </ActionBar>
@@ -14,9 +14,8 @@
                     <Label text="Hello RadSideDrawer!" class="sidedrawer-header-brand" />
                 </StackLayout>
                 <StackLayout class="sidedrawer-content">
-                    <label text="overview" class="sidedrawer-list-item-text" tap="onOverview" />
-                    <label text="create" class="sidedrawer-list-item-text" tap="onCreate" />
-                    <Label text="TODO's" class="sidedrawer-list-item-text" />
+                    <label text="New task" class="sidedrawer-list-item-text" tap="onCreate" />
+                    <label text="tasks" class="sidedrawer-list-item-text" tap="onOverview" />
                     <Label text="about" class="sidedrawer-list-item-text" />
                     <Label text="Log Out" class="sidedrawer-list-item-text" tap="onLogOUt"/>
                 </StackLayout>
@@ -25,7 +24,8 @@
         <!-- The main content -->
         <sd:RadSideDrawer.mainContent>
             <StackLayout>
-                <Button text="Toggle Drawer" class="btn btn-primary" tap="toggleDrawer" />
+                <!-- <Button text="Menu" class="btn btn-primary" tap="toggleDrawer" /> -->
+              
                 <GridLayout rows="auto, *, auto" columns="*">
                     <Image src="res://hero" stretch="aspectFit" row="0" col="0" class="hero" />
                     <StackLayout row="1" col="0" class="content">
