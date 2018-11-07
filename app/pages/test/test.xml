@@ -1,0 +1,20 @@
+<Page
+    xmlns:customControls="shared"
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    xmlns:sd="nativescript-ui-sidedrawer" loaded="pageLoaded">
+    <ActionBar title="RadSideDrawer Demo" class="action-bar">
+        <ActionItem tap="toggleDrawer" ios.systemIcon="4" android.systemIcon="ic_menu_btn_add" ios.position="left" />
+    </ActionBar>
+    <sd:RadSideDrawer id="sideDrawer">
+        <!-- side drawer content -->
+        <sd:RadSideDrawer.drawerContent>
+            <customControls:sidedrawer />
+        </sd:RadSideDrawer.drawerContent>
+        <!-- The main content -->
+        <sd:RadSideDrawer.mainContent>
+            <StackLayout>
+                <Button text="Toggle Drawer" class="btn btn-primary" tap="toggleDrawer" />
+            </StackLayout>
+        </sd:RadSideDrawer.mainContent>
+    </sd:RadSideDrawer>
+</Page>

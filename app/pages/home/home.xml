@@ -1,4 +1,5 @@
 <Page
+    xmlns:customControls="shared"
     xmlns="http://schemas.nativescript.org/tns.xsd"
     xmlns:sd="nativescript-ui-sidedrawer" loaded="pageLoaded">
     <ActionBar title="Project list" class="action-bar">
@@ -9,23 +10,13 @@
         <!-- <sd:RadSideDrawer id="sideDrawer"> -->
         <!-- side drawer content -->
         <sd:RadSideDrawer.drawerContent>
-            <StackLayout class="sidedrawer-left">
-                <StackLayout class="sidedrawer-header">
-                    <Label text="Hello RadSideDrawer!" class="sidedrawer-header-brand" />
-                </StackLayout>
-                <StackLayout class="sidedrawer-content">
-                    <label text="New project" class="sidedrawer-list-item-text" tap="onNewTask" />
-                    <label text="projects" class="sidedrawer-list-item-text" tap="onTasks" />
-                    <Label text="about" class="sidedrawer-list-item-text" />
-                    <Label text="Log Out" class="sidedrawer-list-item-text" tap="onLogOUt"/>
-                </StackLayout>
-            </StackLayout>
+            <customControls:sidedrawer />
         </sd:RadSideDrawer.drawerContent>
         <!-- The main content -->
         <sd:RadSideDrawer.mainContent>
             <StackLayout>
                 <!-- <Button text="Menu" class="btn btn-primary" tap="toggleDrawer" /> -->
-              <Label class="h1" text="Tasks"></Label>
+                <Label class="h1" text="Tasks"></Label>
                 <GridLayout rows="auto, *, auto" columns="*">
                     <Image src="res://hero" stretch="aspectFit" row="0" col="0" class="hero" />
                     <StackLayout row="1" col="0" class="content">

@@ -34,6 +34,10 @@ exports.onLogOUt = function() {
   traverse("login");
 };
 
+exports.onTest = function() {
+  traverse("test");
+};
+
 // We can use auth-tokens via header
 
 exports.onLoaded = function(args) {
