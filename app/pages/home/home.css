@@ -3,10 +3,12 @@ AbsoluteLayout{
   width:100%;
   margin: 2rem;
 }
-Image{
+
+AbsoluteLayout section{
   float: left;
-  width: 50%;
-  margin:2;
+  width: 40%;
+  margin-left:5%;
+  margin-right:5%;
 }
 .thumbnail {
     height: 128px;
