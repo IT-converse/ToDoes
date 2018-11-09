@@ -15,8 +15,12 @@
         <!-- The main content -->
         <sd:RadSideDrawer.mainContent>
             <AbsoluteLayout width="210" height="210" backgroundColor="lightgray">
-            <Image src="res://logo" stretch="none" class="img-rounded p-l-15 p-r-15 p-t-15" ></Image>
-            <Image src="res://logo" stretch="none" class="img-rounded p-l-15 p-r-15 p-t-15"></Image>
+            <Image src="res://student" stretch="none" class="img-rounded p-l-15 p-r-15 p-t-15" ></Image>
+            <Image src="res://map" stretch="none" class="img-rounded p-l-15 p-r-15 p-t-15"></Image>
+            <Image src="res://bezienswaardigheden" stretch="none" class="img-rounded p-l-15 p-r-15 p-t-15"></Image>
+            <Image src="res://route" stretch="none" class="img-rounded p-l-15 p-r-15 p-t-15"></Image>
+
+
  </AbsoluteLayout>
         </sd:RadSideDrawer.mainContent>
     </sd:RadSideDrawer>
