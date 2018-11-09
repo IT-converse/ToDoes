@@ -14,26 +14,12 @@
         </sd:RadSideDrawer.drawerContent>
         <!-- The main content -->
         <sd:RadSideDrawer.mainContent>
-            <StackLayout>
-                <!-- <Button text="Menu" class="btn btn-primary" tap="toggleDrawer" /> -->
-                <Label class="h1" text="Tasks"></Label>
-                <GridLayout rows="auto, *, auto" columns="*">
-                    <Image src="res://hero" stretch="aspectFit" row="0" col="0" class="hero" />
-                    <StackLayout row="1" col="0" class="content">
-                        <ListView items="{{ projects }}"  loaded="onLoaded" itemLoading="onItemLoading" itemTap="onItemTap">
-                            <ListView.itemTemplate>
-                                <StackLayout class="project" >
-                                    <StackLayout orientation="horizontal">
-                                        <Image src="{{ image_url }}" class="thumbnail" />
-                                        <Label text="{{ title }}" />
-                                    </StackLayout>
-                                </StackLayout>
-                            </ListView.itemTemplate>
-                        </ListView>
-                    </StackLayout>
-                    <Label text="Written by BioBoost (aka Nico De Witte)" class="footer" textWrap="true" row="2" col="0" />
-                </GridLayout>
-            </StackLayout>
+            <AbsoluteLayout width="210" height="210" backgroundColor="lightgray">
+   <Label text="10, 10" left="10" top="10" width="90" height="90" backgroundColor="red"/>
+   <Label text="110, 10" left="110" top="10" width="90" height="90" backgroundColor="green"/>
+   <Label text="110, 110" left="110" top="110" width="90" height="90" backgroundColor="blue"/>
+   <Label text="10, 110" left="10" top="110" width="90" height="90" backgroundColor="yellow"/>
+ </AbsoluteLayout>
         </sd:RadSideDrawer.mainContent>
     </sd:RadSideDrawer>
 </Page>
