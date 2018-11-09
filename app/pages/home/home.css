@@ -1,5 +1,15 @@
 @import '~nativescript-theme-core/css/core.ruby.css';
-
+section{
+  width:100%;
+  margin: 2rem;
+}
+Label{
+  float: left;
+  width: 50%;
+  margin:2;
+  padding: 5;
+  background-color: #b3ffc3;
+}
 .thumbnail {
     height: 128px;
   }
