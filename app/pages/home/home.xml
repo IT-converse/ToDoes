@@ -22,6 +22,8 @@
                 <Image src="res://student" stretch="none" class="img-rounded p-l-15 p-r-15 p-t-15" onTap = "onStudent"></Image>
                 <Image src="res://about" stretch="none" class="img-rounded p-l-15 p-r-15 p-t-15" onTap = "onAbout"></Image>
             </AbsoluteLayout>
+
+
         </sd:RadSideDrawer.mainContent>
     </sd:RadSideDrawer>
 </Page>
