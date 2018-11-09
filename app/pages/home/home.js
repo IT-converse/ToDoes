@@ -22,48 +22,21 @@ exports.toggleDrawer = function() {
   drawer.toggleDrawerState();
 };
 
-exports.onNewTask = function() {
-  traverse("createProject");
+exports.onStation = function() {
+  traverse("station");
 };
-
-exports.onTasks = function() {
-  traverse("overview");
+exports.onMap = function() {
+  traverse("map");
 };
-
-exports.onLogOUt = function() {
-  traverse("login");
+exports.onBezienswaardigheden = function() {
+  traverse("bezienswaardigheden");
 };
-
-exports.onTest = function() {
-  traverse("test");
+exports.onRoute = function() {
+  traverse("route");
 };
-
-// We can use auth-tokens via header
-
-exports.onLoaded = function(args) {
-  let page = args.object;
-  let projects = new Observable.fromObject({
-    projects: []
-  });
-  page.bindingContext = projects;
-
-  httpModule
-    .request({
-      url: "http://0.0.0.0:3000/projects.json",
-      method: "GET",
-      headers: { "Content-Type": "application/json" }
-    })
-    .then(
-      response => {
-        console.log(response.statusCode);
-        if (response.statusCode == 200) {
-          projects.projects = response.content.toJSON();
-        } else {
-          Toast.makeText("Failed to fetch projects", "long").show();
-        }
-      },
-      e => {
-        Toast.makeText("Failed to get projects", "long").show();
-      }
-    );
+exports.onStudent = function() {
+  traverse("student");
+};
+exports.onAbout = function() {
+  traverse("about");
 };

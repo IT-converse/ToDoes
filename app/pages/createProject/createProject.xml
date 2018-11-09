@@ -1,8 +1,0 @@
-<Page
-    xmlns="http://www.nativescript.org/tns.xsd" loaded="onLoaded" navigatedTo="onNavigatedTo">
-    <StackLayout>
-        <TextField hint="Project Title ..." text="{{ title }}" />
-        <TextView hint="Description ... " text="{{ description }}" editable="true" />
-        <Button text="createProject" tap="onCreate" class="btn btn-primary btn-active btn-rounded-lg" />
-    </StackLayout>
-</Page>

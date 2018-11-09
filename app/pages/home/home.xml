@@ -2,7 +2,7 @@
     xmlns:customControls="shared"
     xmlns="http://schemas.nativescript.org/tns.xsd"
     xmlns:sd="nativescript-ui-sidedrawer" loaded="pageLoaded">
-    <ActionBar title="Project list" class="action-bar">
+    <ActionBar title="Menu" class="action-bar">
         <ActionItem tap="toggleDrawer" ios.systemIcon="4" android.systemIcon="ic_menu_btn_add" ios.position="left" />
         <NavigationButton visibility="hidden" ></NavigationButton>
     </ActionBar>
@@ -15,9 +15,13 @@
         <!-- The main content -->
         <sd:RadSideDrawer.mainContent>
             <AbsoluteLayout width="210" height="210" backgroundColor="lightgray">
-            <section><Image src="res://logo" stretch="none" class="img-rounded p-l-15 p-r-15 p-t-15" ></Image></section>
-            <section><Image src="res://logo" stretch="none" class="img-rounded p-l-15 p-r-15 p-t-15"></Image></section>
- </AbsoluteLayout>
+                <Image src="res://station" stretch="none" class="img-rounded p-l-15 p-r-15 p-t-15" onTap = "onStation"></Image>
+                <Image src="res://map" stretch="none" class="img-rounded p-l-15 p-r-15 p-t-15" onTap = "onMap"></Image>
+                <Image src="res://bezienswaardigheden" stretch="none" class="img-rounded p-l-15 p-r-15 p-t-15" onTap = "onBezienswaardigheden"></Image>
+                <Image src="res://route" stretch="none" class="img-rounded p-l-15 p-r-15 p-t-15" onTap = "onRoute"></Image>
+                <Image src="res://student" stretch="none" class="img-rounded p-l-15 p-r-15 p-t-15" onTap = "onStudent"></Image>
+                <Image src="res://about" stretch="none" class="img-rounded p-l-15 p-r-15 p-t-15" onTap = "onAbout"></Image>
+            </AbsoluteLayout>
         </sd:RadSideDrawer.mainContent>
     </sd:RadSideDrawer>
 </Page>
