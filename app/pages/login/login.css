@@ -23,3 +23,7 @@
   Button{
     color: #0C0;
   }
+
+  TextField {
+    text-align: center;
+  }
