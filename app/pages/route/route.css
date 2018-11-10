@@ -1,0 +1,25 @@
+TextField {
+  border-width: 3;
+  border-color: black;
+  border-radius: 20;
+  padding: 10;
+  margin: 10;
+  font-size: 25;
+}
+label {
+  text-align: center;
+}
+
+button {
+  border-width: 3;
+  border-color: black;
+  border-radius: 20;
+  padding: 10;
+  margin: 10;
+  color: white;
+  font-size: 25;
+}
+/* 
+.input {
+    font-size: 40;
+} */

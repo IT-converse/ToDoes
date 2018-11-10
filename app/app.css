@@ -143,7 +143,13 @@ components that have the btn class name.
     }
     
     .btn {
-    color: #000000;
+        border-width: 3;
+        border-color: black;
+        border-radius: 40;
+        padding: 10;
+        margin: 10; 
+        color: white;
+        font-size: 25;
     }
     
     .btn-primary {
@@ -155,11 +161,11 @@ components that have the btn class name.
     }
     
     .btn-primary {
-    color: #000000;
+    color: white;
     }
     
     .btn-outline {
-    border-color: #000000;
+    border-color:white;
     }
     
     .btn-outline {

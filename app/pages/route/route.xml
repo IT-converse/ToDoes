@@ -1,3 +1,17 @@
-<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="onLoaded" navigatedTo="onNavigatedTo">
-    
+<Page
+    xmlns="http://www.nativescript.org/tns.xsd" loaded="onLoaded" navigatedTo="onNavigatedTo">
+    <ActionBar title="ROUTE" class="action-bar">
+        <NavigationButton visibility="hidden" ></NavigationButton>
+    </ActionBar>
+    <FlexboxLayout class="page" class="form">
+        <StackLayout class="input-field" class="form">
+            <GridLayout columns="50, *" rows="150,100,100">
+                <Label class="h3" row="1" col="0" text="Van"></Label>
+                <TextField   row="1" col="1" hint="Burgemeester Sabotlaan 41, 8000 Brugge" ></TextField>
+                <Label class="h3" row="2" col="0" text="Naar"></Label>
+                <TextField   row="2" col="1" hint="Sint-Salvatorskoorstraat 8, 8000 Brugge" ></TextField>
+            </GridLayout>
+            <Button class="btn btn-primary" width="40%" text="Submit" row="2" col="1" tap="" />
+        </StackLayout>
+    </FlexboxLayout>
 </Page>
