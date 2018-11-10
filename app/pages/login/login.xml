@@ -56,10 +56,11 @@
                 <TextField class="input" hint="Email" keyboardType="email" autocorrect="false" autocapitalizationType="none"></TextField>
             </StackLayout>
             <StackLayout class="input-field">
-                <TextField class="input" hint="password" ></TextField>
+                <TextField class="input" hint="password"  secure="true" ></TextField>
             </StackLayout>
             <Button text="Log In" class="btn btn-primary" tap="onLogin"></Button>
         </StackLayout>
         <Label text="Don’t have an account?" tap="onCreateUser"></Label>
     </FlexboxLayout>
 </Page>
+

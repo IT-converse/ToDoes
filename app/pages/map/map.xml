@@ -1,3 +1,8 @@
-<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="onLoaded" navigatedTo="onNavigatedTo">
-    
+<Page
+    xmlns="http://www.nativescript.org/tns.xsd" loaded="onLoaded" navigatedTo="onNavigatedTo">
+    <ActionBar title="BEZIENSWAARDIGHEDEN" class="action-bar">
+        <ActionItem text="Mileu" tap="toggleDrawer" ios.position="right" />
+        <NavigationButton visibility="hidden" ></NavigationButton>
+    </ActionBar>
+    <Image src="res://map2"  stretch="aspectFill" class="img-rounded p-l-15 p-r-15 p-t-15" onTap = "onStation"></Image>
 </Page>

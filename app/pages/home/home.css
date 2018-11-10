@@ -9,3 +9,18 @@
   GridLayout label {
     text-align: center;
   }
+
+  image {
+    border-width: 3;
+    border-color: #00CC00;
+    border-radius: 60;
+    padding: 10;
+    margin: 10;
+    color: white;
+    font-size: 25;
+  }
+
+  label {
+    padding: 1;
+    margin-top: 6;
+  }

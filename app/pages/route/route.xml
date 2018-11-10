@@ -11,7 +11,7 @@
                 <Label class="h3" row="2" col="0" text="Naar"></Label>
                 <TextField   row="2" col="1" hint="Sint-Salvatorskoorstraat 8, 8000 Brugge" ></TextField>
             </GridLayout>
-            <Button class="btn btn-primary" width="40%" text="Submit" row="2" col="1" tap="" />
+            <Button class="btn btn-primary" width="40%" text="Submit" row="2" col="1" tap="onSybren" />
         </StackLayout>
     </FlexboxLayout>
 </Page>

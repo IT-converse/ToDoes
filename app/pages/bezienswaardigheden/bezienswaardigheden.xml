@@ -1,5 +1,26 @@
-<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="onLoaded" navigatedTo="onNavigatedTo">
-<StackLayout>
-    
-</StackLayout>
+<Page
+    xmlns="http://www.nativescript.org/tns.xsd" loaded="onLoaded" navigatedTo="onNavigatedTo">
+    <ActionBar title="ROUTE" class="action-bar">
+        <NavigationButton visibility="hidden" ></NavigationButton>
+    </ActionBar>
+    <FlexboxLayout class="page" class="form">
+        <StackLayout class="input-field" class="form">
+            <GridLayout columns="10,60, *" rows="*,*,*,*,*,*">
+                <Image src="res://station" row="0" col="0" stretch="fill" class="img-rounded p-l-15 p-r-15 p-t-15" onTap = "onStation"></Image>
+                <Label text="map"  row="0" col=21" textWrap="true" />
+                <Image src="res://map" stretch="fill"  row="1" col="1" class="img-rounded p-l-15 p-r-15 p-t-15" onTap = "onMap"></Image>
+                <Label text="sight"  row="1" col="2" textWrap="true" />
+                <Image src="res://bezienswaardigheden" stretch="fill" row="2" col="1" class="img-rounded p-l-15 p-r-15 p-t-15" onTap = "onBezienswaardigheden"></Image>
+                <Label text="route"  row="2" col="2" textWrap="true" />
+                <Image src="res://route" stretch="fill"  row="3" col="1" class="img-rounded p-l-15 p-r-15 p-t-15" onTap = "onRoute"></Image>
+                <Label text="friends"  row="3" col="2" textWrap="true" />
+                <Image src="res://student" stretch="fill" row="4" col="1"  class="img-rounded p-l-15 p-r-15 p-t-15" onTap = "onStudent"></Image>
+                <Label text="about"  row="4" col="2" textWrap="true" />
+                <Image src="res://about" stretch="fill" row="5" col="1" class="img-rounded p-l-15 p-r-15 p-t-15" onTap = "onAbout"></Image>
+                <Label text="station"  row="5" col="2" textWrap="true" />
+            </GridLayout>
+            <Button class="btn btn-primary" width="40%" text="Submit" row="2" col="1" tap="onSybren" />
+            
+        </StackLayout>
+    </FlexboxLayout>
 </Page>

@@ -14,23 +14,18 @@
         </sd:RadSideDrawer.drawerContent>
         <!-- The main content -->
         <sd:RadSideDrawer.mainContent>
-            <GridLayout columns="*, *" rows="20,*,20,*,20,*">
-            <Label text="station"  row="0" col="0" textWrap="true" />
+            <GridLayout columns="*, *" rows="25,*,25,*,25,*">
+                <Label text="station"  row="0" col="0" textWrap="true" />
                 <Image src="res://station" row="1" col="0" stretch="fill" class="img-rounded p-l-15 p-r-15 p-t-15" onTap = "onStation"></Image>
-            <Label text="map"  row="0" col="1" textWrap="true" />
-
+                <Label text="map"  row="0" col="1" textWrap="true" />
                 <Image src="res://map" stretch="fill"  row="1" col="1" class="img-rounded p-l-15 p-r-15 p-t-15" onTap = "onMap"></Image>
-            <Label text="sight"  row="2" col="0" textWrap="true" />
-
+                <Label text="sight"  row="2" col="0" textWrap="true" />
                 <Image src="res://bezienswaardigheden" stretch="fill" row="3" col="0" class="img-rounded p-l-15 p-r-15 p-t-15" onTap = "onBezienswaardigheden"></Image>
-            <Label text="route"  row="2" col="1" textWrap="true" />
-
+                <Label text="route"  row="2" col="1" textWrap="true" />
                 <Image src="res://route" stretch="fill"  row="3" col="1" class="img-rounded p-l-15 p-r-15 p-t-15" onTap = "onRoute"></Image>
-            <Label text="friends"  row="4" col="0" textWrap="true" />
-
+                <Label text="friends"  row="4" col="0" textWrap="true" />
                 <Image src="res://student" stretch="fill" row="5" col="0"  class="img-rounded p-l-15 p-r-15 p-t-15" onTap = "onStudent"></Image>
-            <Label text="about"  row="4" col="1" textWrap="true" />
-
+                <Label text="about"  row="4" col="1" textWrap="true" />
                 <Image src="res://about" stretch="fill" row="5" col="1" class="img-rounded p-l-15 p-r-15 p-t-15" onTap = "onAbout"></Image>
             </GridLayout>
         </sd:RadSideDrawer.mainContent>
